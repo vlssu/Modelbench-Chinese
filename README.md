@@ -1,6 +1,7 @@
 ![GitHub Stars](https://img.shields.io/github/stars/vlssu/Modelbench-Chinese?style=for-the-badge)
 ![Github Licenses](https://img.shields.io/github/license/vlssu/Modelbench-Chinese?style=for-the-badge&logo=appveyor)
 ![GitHub Releases](https://img.shields.io/github/v/release/vlssu/Modelbench-Chinese?style=for-the-badge&logo=appveyor)
+![GitHub Downloads](https://img.shields.io/github/downloads/vlssu/Modelbench-Chinese/total?style=for-the-badge)
 # Modelbench 简体中文汉化
 
 Modelbench翻译
