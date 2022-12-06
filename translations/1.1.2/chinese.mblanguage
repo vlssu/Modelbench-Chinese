@@ -4,8 +4,8 @@
         "language": "Chinese",
         "locale": "zh-CN",
         "translator": "飒爽师叔",
-        "forversion": "1.1.3",
-        "lastchange": "2021.01.15"
+        "forversion": "1.1.2",
+        "lastchange": "2020.09.09"
     },
     "startup/": {
         "modeldetected": "检测到未保存的模型",
@@ -462,7 +462,7 @@
         "blendcolor": "混合材质",
         "mixcolor": "混合颜色",
         "mixamount": "混合强度",
-        "opacity": "透明度",
+        "opacity": "不透明度",
         "brightness": "亮度",
         "inflate": "膨胀",
         "bend": "弯曲",

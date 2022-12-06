@@ -462,7 +462,7 @@
         "blendcolor": "混合材质",
         "mixcolor": "混合颜色",
         "mixamount": "混合强度",
-        "opacity": "透明度",
+        "opacity": "不透明度",
         "brightness": "亮度",
         "inflate": "膨胀",
         "bend": "弯曲",
