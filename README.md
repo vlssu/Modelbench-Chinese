@@ -10,6 +10,7 @@
 * [`1.1.2`](./translations/1.1.2/chinese.mblanguage)
 * [`1.1.3`](./translations/1.1.3/chinese.mblanguage)
 * [`1.1.4`](./translations/1.1.4/chinese.mblanguage)
+* [`1.1.5`](./translations/1.1.5/chinese.mblanguage)
 
 ---
 

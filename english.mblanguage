@@ -4,19 +4,30 @@
 		"language": "English",
 		"locale": "en-US",
         "translator": "Nimi",
-        "forversion": "1.1.3",
-        "lastchange": "2021.01.15"
+        "forversion": "1.1.5",
+        "lastchange": "2023.02.25"
     },
 	"startup/": {
 		"modeldetected": "Unsaved model detected",
-		"modeldetecteddesc": "An unsaved model was found from a previous Modelbench session.",
-		"recovermodel": "RECOVER...",
-		"browse": "BROWSE...",
-		"newmodel": "NEW MODEL",
+		"modeldetecteddesc": "A backup was found for an unsaved model in a previous Modelbench session. Do you want to load it?",
+		"recovermodel": "Recover model...",
+		"browse": "Browse...",
+		"newmodel": "New model",
 		"recentmodels": "Recent models",
 		"startfromscratch": "Start from scratch...",
 		"loadatemplate": "Load a template...",
 		"version": "v %1"
+	},
+	"colorpicker/": {
+		"r": "R",
+		"g": "G",
+		"b": "B",
+		"h": "H",
+		"s": "S",
+		"v": "V",
+		"hex": "Hex",
+		"rgb": "RGB",
+		"hsv": "HSV"
 	},
 	"recent/": {
 		"lastopened": "Last opened",
@@ -89,45 +100,25 @@
 		"newupdatedesc": "%1 is available to download.",
 		"savemodel": "Model saved successfully!",
 		"saveimage": "Image saved successfully!",
-		"openimage": "OPEN IMAGE",
-		"warning/": {
-			"samepartname": "Some parts share the same name.",
-			"emptypartname": "Some parts don't have a name.",
-			"emptymodelname": "This model hasn't been given a name.",
-			"savemodel": "The model may not load correctly in Mine-imator because of the following:"
-		},
+		"openimage": "Open image",
 		"button/": {
-			"download": "DOWNLOAD NOW",
-			"update": "UPDATE",
-			"remindmelater": "REMIND ME LATER"
-		},
-		"tip/": {
-			"caption": "Tip #%1",
-			"next": "NEXT TIP",
-			"previous": "PREVIOUS TIP",
-			"1": "Try turning on Slow shape generation to increase performance with 3D planes!",
-			"2": "Having trouble finding something? Try right-clicking to show a menu with options.",
-			"3": "If the program feels slow, try disabling shape outlines and ambient occlusion!",
-			"4": "For the best looking bends, move your shapes with the pivot offset tool.",
-			"5": "'Refresh textures on focus' can be helpful for editing textures while modeling!"
+			"download": "Download now",
+			"update": "Update",
+			"remindmelater": "Remind me later"
 		}
-	},
-	"colorpicker/": {
-		"r": "R",
-		"g": "G",
-		"b": "B",
-		"h": "H",
-		"s": "S",
-		"v": "V",
-		"hex": "Hex"
 	},
 	"contextmenu/": {
 		"keycontrolreset": "Reset shortcut",
 		"copylink": "Copy link",
-		"combinescale": "Combine XYZ",
-		"seperatescale": "Seperate XYZ",
+		"scalecombine": "Combine XYZ",
+		"scaleseperate": "Seperate XYZ",
 		"centeraxis": "Center pivot axis",
 		"resetview": "Reset view",
+		"move": "Move to...",
+		"left": "Left",
+		"right": "Right",
+		"bottom": "Bottom",
+		"top": "Top",
 		"value/": {
 			"on": "On",
 			"off": "Off",
@@ -136,15 +127,10 @@
 			"paste": "Paste value",
 			"reset": "Reset value"
 		},
-		"category/": {
-			"position": "position",
-			"pivotoffset": "pivot offset",
-			"rotation": "rotation",
-			"scale": "scale",
-			"size": "size",
-			"copy": "Copy all %1 values",
-			"paste": "Paste all %1 values",
-			"reset": "Reset all %1 values"
+		"group/": {
+			"copy": "Copy all values",
+			"paste": "Paste all values",
+			"reset": "Reset all values"
 		},
 		"textbox/": {
 			"cut": "Cut",
@@ -179,7 +165,38 @@
 	},
 	"toolbar/": {
 		"modeling": "MODELING",
-		"preview": "PREVIEW"
+		"preview": "PREVIEW",
+		"file": "File",
+		"file/": {
+			"new": "New model...",
+			"open": "Open model",
+			"recent": "Open recent...",
+			"save": "Save model",
+			"saveas": "Save model as...",
+			"import": "Import model...",
+			"exportobj": "Export model as .obj..."
+		},
+		"edit": "Edit",
+		"edit/": {
+			"undo": "Undo",
+			"redo": "Redo",
+			"selectall": "Select all",
+			"duplicate": "Duplicate elements",
+			"delete": "Delete elements",
+			"preferences": "Preferences..."
+		},
+		"view": "View",
+		"view/": {
+			"reset": "Reset work camera",
+			"shortcutsbar": "Show shortcuts bar",
+			"uveditor": "Show UV editor"
+		},
+		"help": "Help",
+		"help/": {
+			"about": "About Modelbench...",
+			"report": "Report a bug...",
+			"forums": "Visit the forums..."
+		}
 	},
 	"tooltip/": {
 		"showoptions": "Show options",
@@ -215,6 +232,8 @@
 		"shadedmode": "Shaded mode",
 		"texturedmode": "Textured mode",
 		"walknav": "Toggle walk navigation",
+		"zoom": "Zoom",
+		"pan": "Pan",
 		"blockybendingenable": "Enable blocky bending",
 		"blockybendingdisable": "Disable blocky bending",
 		"uveditor/": {
@@ -235,8 +254,9 @@
 			"underwater": "Underwater",
 			"the_end": "The End",
 			"nether": "Nether",
-			"soulsand_valley": "Nether (Soulsand valley)"
-		}
+			"soulsand_valley": "Nether (Soul Sand Valley)"
+		},
+		"editkeybind": "Edit keybind"
 	},
 	"toolset/": {
 		"add/": {
@@ -259,8 +279,7 @@
 		{
 			"size": "Size",
 			"mode": "Mode",
-			"mode/":
-			{
+			"mode/": {
 				"absolute": "Absolute",
 				"local": "Local"
 			}
@@ -289,11 +308,12 @@
 	},
 	"settingsmenu/": {
 		"snap/": {
-			"move": "Size (Move)",
-			"rotate": "Size (Rotate)",
-			"scale": "Size (Scale)",
-			"uv": "Size (Size & UVs)",
-			"absolute": "Absolute snapping"
+			"move": "Move",
+			"rotate": "Rotate",
+			"scale": "Scale",
+			"uv": "Size & UVs",
+			"absolute": "Absolute snapping",
+			"absolutetip": "Snap values to a grid, instead of relative to the current value."
 		},
 		"overlays/": {
 			"grid": "Grid",
@@ -342,6 +362,7 @@
 	"modelproperties": "MODEL PROPERTIES",
 	"elements": "ELEMENTS",
 	"textures": "TEXTURES",
+	"transform": "TRANSFORM",
 	"position": "POSITION",
 	"pivotoffset": "PIVOT OFFSET",
 	"rotation": "ROTATION",
@@ -361,7 +382,6 @@
 	"assets/": {
 		"newmodel": "New model",
 		"modelname": "Model name",
-		"emptymodelname": "Model name cannot be empty.",
 		"modellocation": "Model location",
 		"modelnotsaved": "Model not saved",
 		"openfolder": "Open folder",
@@ -377,38 +397,41 @@
 		"movebelow": "Move below %1",
 		"parentto": "Parent to %1",
 		"roottexture": "Root texture",
-		"addtexture": "ADD TEXTURE",
+		"addtexture": "Add texture",
 		"texturesize": "%1x%2 pixels",
 		"texturescale": "Scale",
-		"defaulttexture": "Default texture"
+		"defaulttexture": "default"
 	},
 	"elementeditor/": {
 		"partname": "Part name",
 		"shapename": "Shape name",
-		"emptypartname": "Part names cannot be empty.",
-		"samepartname": "Part names cannot be the same.",
 		"newpart": "New part",
 		"newshape": "New shape",
+		"position": "Position",
 		"position/": {
 			"x": "X",
 			"y": "Y",
 			"z": "Z"
 		},
+		"rotation": "Rotation",
 		"rotation/": {
 			"x": "X",
 			"y": "Y",
 			"z": "Z"
 		},
+		"offset": "Pivot offset",
 		"offset/": {
 			"x": "X",
 			"y": "Y",
 			"z": "Z"
 		},
+		"size": "Size",
 		"size/": {
 			"w": "W",
 			"l": "L",
 			"h": "H"
 		},
+		"scale": "Scale",
 		"scale/": {
 			"x": "X",
 			"y": "Y",
@@ -419,9 +442,9 @@
 			"lock": "Lock to bent half of parent",
 			"axis": "Enabled axes",
 			"axis/": {
-				"x": "Bend on X axis",
-				"y": "Bend on Y axis",
-				"z": "Bend on Z axis"
+				"x": "X axis",
+				"y": "Y axis",
+				"z": "Z axis"
 			},
 			"invert": "Inverted axes",
 			"invert/": {
@@ -431,8 +454,20 @@
 			},
 			"range/": {
 				"x": "Range",
+				"x/": {
+					"mininput": "Min",
+					"maxinput": "Max"
+				},
 				"y": "Range",
-				"z": "Range"
+				"y/": {
+					"mininput": "Min",
+					"maxinput": "Max"
+				},
+				"z": "Range",
+				"z/": {
+					"mininput": "Min",
+					"maxinput": "Max"
+				}
 			},
 			"angle/": {
 				"x": "Default angle",
@@ -441,7 +476,8 @@
 			},
 			"inheritangles": "Inherit bend angles",
 			"inheritangleshelp": "Enables 'Inherit bend' for this part in Mine-imator.",
-			"offset": "Offset",
+			"offset": "Joint offset",
+			"endoffset": "Joint end",
 			"customsize": "Custom bend size",
 			"customsizehelp": "Allows for a custom bend size. This part's bending will ignore program bend styles.",
 			"size": "Size",
@@ -458,12 +494,12 @@
 		"texture": "Texture",
 		"inherittexture": "Inherit texture",
 		"inheritcolor": "Inherit parent color",
-		"inheritcolorhelp": "Inherit color options including opacity and brightness.",
+		"inheritcolorhelp": "Inherit color options including opacity and emissive.",
 		"blendcolor": "Blend color",
 		"mixcolor": "Mix color",
 		"mixamount": "Mix amount",
 		"opacity": "Opacity",
-		"brightness": "Brightness",
+		"brightness": "Emissive",
 		"inflate": "Inflate",
 		"bend": "Bend",
 		"mirrortexture": "Mirror texture",
@@ -504,11 +540,11 @@
 			"1024": "1024px"
 		},
 		"includebackground": "Include background",
-		"exportimage": "EXPORT IMAGE"
+		"exportimage": "Export image"
 	},
 	"openmodel/": {
 		"recentmodels": "Recent models",
-		"browse": "BROWSE..."
+		"browse": "Browse..."
 	},
 	"export/": {
 		"disclaimer": "Blend color, Mix color, Opacity, Brightness, Invert, Face camera, Hover, Hide Front, Hide Back, Wind, and Render depth settings are not supported!",
@@ -524,7 +560,7 @@
 			"seperateparts": "Parts as objects",
 			"seperateshapes": "Shapes as objects"
 		},
-		"obj": "EXPORT OBJ",
+		"obj": "Export .obj",
 		"stage/": {
 			"total": "Exporting model OBJ...",
 			"done": "(%1% Done)",
@@ -549,24 +585,26 @@
 		"refreshtextureshelp": "Automatically refresh all model textures when the window is refocused.",
 		"adjustpivotresize": "Adjust pivot on resizing",
 		"adjustpivotresizehelp": "Adjust shape pivot based on size editing in the UV editor.",
-		"shortcuts": "Shortcuts",
+		"controlskeybinds": "Keybinds",
 		"controlsfile": "File",
-		"controlsediting": "Editing",
+		"controlsediting": "Edit",
 		"controlstools": "Tools",
-		"controlsnavigation": "Navigation",
+		"controlscamera": "Camera",
 		"key/": {
-			"new": "New model",
-			"newtemplate": "New model (template)",
-			"open": "Open model",
-			"save": "Save model",
-			"saveas": "Save model as",
-			"import": "Import model",
+			"model/": {
+				"new": "New model",
+				"newtemplate": "New model (template)",
+				"open": "Open model",
+				"save": "Save model",
+				"saveas": "Save model as",
+				"import": "Import model"
+			},
 			"undo": "Undo",
 			"redo": "Redo",
 			"rename": "Rename",
 			"delete": "Delete",
 			"duplicate": "Duplicate",
-			"selectall": "Select all",
+			"select": "Select all",
 			"uveditor": "Toggle UV editor",
 			"tool/": {
 				"select": "Select tool",
@@ -579,22 +617,24 @@
 				"resize": "Resize tool"
 			},
 			"snap": "Toggle snapping",
-			"walknavigation": "Walk navigation",
-			"forward": "Forward",
-            "back": "Back",
-            "left": "Left",
-            "right": "Right",
-            "ascend": "Ascend",
-            "descend": "Descend",
-            "reset": "Reset",
-            "fast": "Faster",
-            "slow": "Slower"
+			"cam/": {
+				"walk": "Walk navigation",
+				"forward": "Forward",
+				"back": "Back",
+				"left": "Left",
+				"right": "Right",
+				"ascend": "Ascend",
+				"descend": "Descend",
+				"reset": "Reset",
+				"fast": "Faster",
+				"slow": "Slower"
+			}
 		},
 		"theme": "Theme",
 		"theme/": {
-			"light": "LIGHT",
-			"dark": "DARK",
-			"darker": "DARKER"
+			"light": "Light",
+			"dark": "Dark",
+			"darker": "Darker"
 		},
 		"accentcolor": "Accent color",
 		"language": "Language",
@@ -602,14 +642,12 @@
 		"zisup": "Z is up",
 		"sharedtextureuvs": "Display shared texture UVs",
 		"sharedtextureuvshelp": "Displays shapes that share a texture in the UV editor.",
-		"startuptips": "Show startup tips",
 		"reducedmotion": "Reduced motion",
-		"restoredefaults": "RESTORE DEFAULTS",
+		"restoredefaults": "Restore defaults",
 		"looksensitivity": "Look sensitivity",
-		"smoothcamera": "Smooth camera",
 		"viewportmousecontrols": "Viewport mouse controls",
-		"viewportmousecontrolsleft": "LEFT CLICK",
-		"viewportmousecontrolsmiddle": "MIDDLE CLICK"
+		"viewportmousecontrolsleft": "Left click",
+		"viewportmousecontrolsmiddle": "Middle click"
 	},
 	"about/": {
 		"version": "Version %1",
@@ -619,8 +657,7 @@
 		"development": "DEVELOPMENT",
 		"uibranding": "UI & BRANDING",
 		"specialthanks": "SPECIAL THANKS",
-		"betatesting": "BETA TESTING",
-		"donate": "DONATE"
+		"betatesting": "BETA TESTING"
 	},
 	"shortcut/": {
 		"select": "Select",
@@ -629,9 +666,9 @@
 		"deselect": "Deselect",
 		"groupselect": "Group select",
 		"moveselection": "Move selection",
-		"orbitview": "Orbit view",
-		"panview": "Pan view",
-		"walknavigation": "Walk navigation",
+		"orbit": "Orbit view",
+		"pan": "Pan view",
+		"walk": "Walk navigation",
 		"zoom": "Zoom",
 		"transform": "Transform",
 		"transformslower": "Transform (Slow)",
@@ -652,16 +689,13 @@
 			"editwidthheight": "Edit width/height",
 			"boxuvs": "Set box UVs"
 		},
-		"move/": {
-			"forward": "Forward",
-            "back": "Back",
-            "left": "Left",
-            "right": "Right",
-            "ascend": "Ascend",
-            "descend": "Descend",
-            "reset": "Reset",
-            "fast": "Faster",
-            "slow": "Slower"
-		}
+		"forward": "Forward",
+		"back": "Back",
+		"left": "Left",
+		"right": "Right",
+		"ascend": "Ascend",
+		"descend": "Descend",
+		"faster": "Faster",
+		"slower": "Slower"
 	}
 }
